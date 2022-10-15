@@ -8,3 +8,4 @@ def send(data, port, baudrate, timeout):
     ser.write(data.encode())
     time.sleep(1)
     ser.close()
+

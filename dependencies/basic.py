@@ -1,6 +1,6 @@
 from datetime import datetime
 from datetime import time
-from dependencies import serial
+from dependencies import Funserial
 import time
 import pyperclip
 
@@ -37,7 +37,7 @@ delete flash:vlan.dat
 
         """
         pyperclip.copy(Config)
-        serial.send(Config, F"COM{Comport}", 9600, 0.05)
+        Funserial.send(Config, F"COM{Comport}", 9600, 0.05)
         print("Your Setup is now Copied to clipboard and sent to the relevant Serial Port")
     elif Delvlan == "N":
         Config = F"""
@@ -57,7 +57,7 @@ no ip domain-lookup
 exit
         """
         pyperclip.copy(Config)
-        serial.send(Config, F"COM{Comport}", 9600, 0.05)
+        Funserial.send(Config, F"COM{Comport}", 9600, 0.05)
         print("Your Setup is now Copied to clipboard and sent to the relevant Serial Port")
     else:
         print("Invaild Delete vlan Statement, Skipping Vlan Deletion")
@@ -77,5 +77,5 @@ banner motd "{banner}"
 no ip domain-lookup
         """
         pyperclip.copy(Config)
-        serial.send(Config, F"COM{Comport}", 9600, 0.05)
+        Funserial.send(Config, F"COM{Comport}", 9600, 0.05)
         print("Your Setup is now Copied to clipboard and sent to the relevant Serial Port")

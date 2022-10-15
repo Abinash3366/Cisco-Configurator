@@ -1,4 +1,4 @@
-from dependencies import switch, router
+from dependencies import switch, router, Slisten
 
 # os.system('cls' if os.name == 'nt' else 'clear')
 # Variables
@@ -10,7 +10,7 @@ Intro = """
 """
 PD = """
 R = Router, S = Switch
-Q = Quit
+L = Serial Listener, Q = Quit
 """
 
 while True:
@@ -24,6 +24,10 @@ while True:
     elif Device == "S":
         print("You have selected a Switch")
         switch.switch()
+        continue
+    elif Device == "L":
+        print("You have selected a Serial Listener")
+        Slisten.listener()
         continue
     elif Device == "Q":
         print("Quitting")
