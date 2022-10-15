@@ -15,7 +15,7 @@ def Basic():
     Enablepass = input("What is the enable password of the device? ")
     banner = input("What is the banner of the device? ")
     Delvlan = input("Would you like to delete VLANs on the device? (Y,N) ")
-    Comport = input("What is the COM port of your serial cable? ")
+    Comport = input("What number is the COM port of your serial cable? ")
     if Delvlan == "Y":
         Config = F"""
 enable
@@ -37,9 +37,8 @@ delete flash:vlan.dat
 
         """
         pyperclip.copy(Config)
-        serial.send(Config, Comport, 9600, 0.05)
-        print("Your Setup is now Copied to clipboard")
-
+        serial.send(Config, F"COM{Comport}", 9600, 0.05)
+        print("Your Setup is now Copied to clipboard and sent to the relevant Serial Port")
     elif Delvlan == "N":
         Config = F"""
 enable
@@ -58,7 +57,8 @@ no ip domain-lookup
 exit
         """
         pyperclip.copy(Config)
-        print("Your Setup is now Copied to clipboard")
+        serial.send(Config, F"COM{Comport}", 9600, 0.05)
+        print("Your Setup is now Copied to clipboard and sent to the relevant Serial Port")
     else:
         print("Invaild Delete vlan Statement, Skipping Vlan Deletion")
         Config = F"""
@@ -77,4 +77,5 @@ banner motd "{banner}"
 no ip domain-lookup
         """
         pyperclip.copy(Config)
-        print("Your Setup is now Copied to clipboard")
+        serial.send(Config, F"COM{Comport}", 9600, 0.05)
+        print("Your Setup is now Copied to clipboard and sent to the relevant Serial Port")
