@@ -1,4 +1,4 @@
-from dependencies import basic
+from dependencies import basic, interface
 
 art = """
  __                   __        _    _                      
@@ -24,7 +24,7 @@ def switch():
             break
         elif In == "I":
             print("You have selected Interface/s Configuration")
-
+            interface.interface(Switch='Y',Router='N')
             break
         elif In == "V":
             print("You have selected Vlan Configuration")

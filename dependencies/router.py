@@ -1,6 +1,6 @@
 from datetime import datetime, time
 import time
-from dependencies import basic
+from dependencies import basic, interface
 
 # os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -34,7 +34,7 @@ def router():
             break
         elif In == "I":
             print("You have selected Interface/s Configuration")
-
+            interface.interface(Switch='N', Router='Y')
             break
         elif In == "V":
             print("You have selected Vlan Configuration")
