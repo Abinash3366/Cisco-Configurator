@@ -26,7 +26,7 @@ def router():
         print("")
         if In == "B":
             print("You have selected Basic Configuration")
-            basic.Basic()
+            basic.Basic(Switch='N', Router='Y')
             time.sleep(1)
             continue
         elif In == "A":

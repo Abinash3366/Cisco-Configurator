@@ -17,7 +17,7 @@ def switch():
         In = input("What would you like to do? ")
         if In == "B":
             print("You have selected Basic Configuration")
-            basic.Basic()
+            basic.Basic(Switch='Y',Router='N')
             continue
         elif In == "A":
             print("You have selected Advanced Configuration, this Selection is Not In Use (NIU)")

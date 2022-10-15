@@ -1,5 +1,8 @@
 def vlan():
-    vlan1 = "What is the name of the Vlan 1? "
-    Vlan1No = "What Vlan Number do you want Vlan 1 to have? "
-    Vlan1IP = "What is the IP Address & Subnet of Vlan 1 (IP Subnet) (Leave Blank for None)? "
-    description = "What is the description of Vlan 1? "
+    vlan = input('What is the Vlan number of the interface? ')
+    vlanname = input('What is the name of the Vlan? ')
+    if input(F'Does {vlanname} have an IP') == 'Y':
+        vlanip = input('What is the IP address of the Vlan? ')
+        vlanipsub = input('What is the subnet of the Vlan? ')
+        vlanipv6 = input('What is the IPv6 address of the Vlan? (Include Prefix)')
+        if input('Do you want to configure a description on the vlan? ') == 'Y':
