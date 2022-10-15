@@ -14,20 +14,20 @@ Q = Quit
 """
 
 while True:
-        print(Intro)
-        print(PD)
-        Device = input("What is the device you want to configure? ")
-        if Device == "R":
-            print("You have selected a Router")
-            router.router()
-            continue
-        elif Device == "S":
-            print("You have selected a Switch")
-            switch.switch()
-            continue
-        elif Device == "Q":
-            print("Quitting")
-            exit()
-        else:
-            print("You have selected an invalid device")
-            continue
+    print(Intro)
+    print(PD)
+    Device = input("What is the device you want to configure? ")
+    if Device == "R":
+        print("You have selected a Router")
+        router.router()
+        continue
+    elif Device == "S":
+        print("You have selected a Switch")
+        switch.switch()
+        continue
+    elif Device == "Q":
+        print("Quitting")
+        exit()
+    else:
+        print("You have selected an invalid device")
+        continue

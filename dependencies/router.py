@@ -15,7 +15,6 @@ current_time = now.strftime("%H:%M:%S")
 dt = datetime.today()
 
 
-
 # function
 def router():
     while True:
