@@ -1,4 +1,7 @@
 from datetime import datetime
+from datetime import time
+from dependencies import serial
+import time
 import pyperclip
 
 now = datetime.now()
@@ -12,6 +15,7 @@ def Basic():
     Enablepass = input("What is the enable password of the device? ")
     banner = input("What is the banner of the device? ")
     Delvlan = input("Would you like to delete VLANs on the device? (Y,N) ")
+    Comport = input("What is the COM port of your serial cable? ")
     if Delvlan == "Y":
         Config = F"""
 enable
@@ -33,6 +37,7 @@ delete flash:vlan.dat
 
         """
         pyperclip.copy(Config)
+        serial.send(Config, Comport, 9600, 0.05)
         print("Your Setup is now Copied to clipboard")
 
     elif Delvlan == "N":
