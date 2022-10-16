@@ -1,4 +1,4 @@
-# A Basic Cisco Configurator 
+# A Basic Cisco Router / Switch Configurator 
 This project is in active d evelopment and most of the functions inside it are not yet ready for use.
 
 ## Installation
