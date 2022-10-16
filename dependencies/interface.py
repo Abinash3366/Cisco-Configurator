@@ -22,6 +22,8 @@ def interface(Switch, Router):
             descrp = input("What is the description of the interface? ")
             descrp = F"description {descrp}"
             if Router == "Y":
+                if input("Do you want to start the interface? ") == "Y":
+                    start = "no shutdown"
                 if input('Do you want the interface to have an IP (Y/N) ') == 'Y':
                     ip = input('What is the IP address of the interface? ')
                     ipsub = input('What is the subnet of the interface? ')
@@ -48,6 +50,7 @@ interface {interface}
 {ipv6}
 {vlannum}
 {vlan}
+{start}
 end
 """
         pyperclip.copy(config)

@@ -1,5 +1,6 @@
 import time
 import serial
+import sys
 
 def send(data, port, baudrate, timeout):
     if baudrate == 0:
