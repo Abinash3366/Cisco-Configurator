@@ -9,7 +9,14 @@ This program does not contain any malicious code and is safe to use however it i
 
 You will also require the modules `pyserial` and `pyperclip`. You can install these modules by running the following commands in your terminal:
 ```Pip install pyserial```
-```Pip install pyperclip``` <br>
+```Pip install pyperclip```  or by running ```pip install -r requirements.txt``` <br>
+
+**TLDR**
+1. ```git clone https://github.com:Abinash3366/Cisco-Configurator.git```
+2. ```cd Cisco-Configurator```
+3. ```pip install -r requirements.txt```
+4. ```python main.py``` or ```python3 main.py```
+
 ## Usage
 Once the program is downloaded and modules are installed you can run the program by running the following command in your terminal:
 ```python3 main.py``` or ```python main.py``` depending on your system.
