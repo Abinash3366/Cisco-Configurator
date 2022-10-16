@@ -11,7 +11,7 @@ You will also require the modules `pyserial` and `pyperclip`. You can install th
 ```Pip install pyserial```
 ```Pip install pyperclip```  or by running ```pip install -r requirements.txt``` <br>
 
-**TLDR**
+**TLDR**: Install Python, clone the repo, install the modules and run the program (Commands below)
 1. ```git clone https://github.com:Abinash3366/Cisco-Configurator.git```
 2. ```cd Cisco-Configurator```
 3. ```pip install -r requirements.txt```
