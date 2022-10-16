@@ -1,5 +1,5 @@
 # A Basic Cisco Configurator 
-This project is in active development and most of the functions inside it are not yet ready for use.
+This project is in active d evelopment and most of the functions inside it are not yet ready for use.
 
 ## Installation
 To install this project, you will need to have Python 3.0 or higher installed on your system. You can download Python from [here](https://www.python.org/downloads/).
@@ -15,6 +15,11 @@ Once the program is downloaded and modules are installed you can run the program
 ```python3 main.py``` or ```python main.py``` depending on your system.
 
 To use the automatic send functionality you will need to have a Cisco device connected to your computer. You can connect the device to your computer using a USB to Console cable. This project assumes that your on a Windows device using a USB to Console cable as mention before, If you would like to change replace the references of ```com``` to your OS's port. <br>
+## What works?
+Basic Setup works for both Router and Switches. <br>
+Basic Interface setup works for both routers and switches. <br>
+The program is currently able to send commands to a Cisco device and copy the output to your clipboard. <br>
+
 ### Other Notices
 As the name suggests this configurator is just a basic one and is only meant to save the 5m that it will take to manually put the commands in. Again project is still in development and more features will be added in the future. <br>
 
