@@ -1,5 +1,5 @@
 # A Basic Cisco Router / Switch Configurator 
-This project is in active d evelopment and most of the functions inside it are not yet ready for use.
+This project is in active development and most of the functions inside it are not yet ready for use.
 
 ## Installation
 To install this project, you will need to have Python 3.0 or higher installed on your system. You can download Python from [here](https://www.python.org/downloads/).
